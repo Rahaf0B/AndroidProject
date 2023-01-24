@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:hapticFeedbackEnabled="false"
+    tools:context=".MainPageOfTheApp">
+
+    <ImageView
+        android:id="@+id/backgroundImg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:scaleType="center"
+
+        android:src="@drawable/tripimg4"
+
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="329dp"
+            android:layout_height="163dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="90dp"
+            android:fontFamily="@font/carter_one"
+            android:lineSpacingExtra="10sp"
+            android:text="Explore The World             With Us"
+            android:textColor="#C89607"
+
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_signin"
+            android:layout_width="300sp"
+            android:layout_height="75sp"
+            android:layout_marginTop="250dp"
+            android:backgroundTint="#469565B4"
+            android:fontFamily="@font/carter_one"
+            android:text="SIGN IN"
+            android:textColor="#222A59"
+            android:textSize="18sp"
+            app:cornerRadius="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <Button
+            android:id="@+id/btn_signup"
+            android:layout_width="300sp"
+            android:layout_height="75sp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#469565B4"
+            android:fontFamily="@font/carter_one"
+            android:text="SIGN UP"
+            android:textColor="#222A59"
+            android:textSize="18sp"
+            app:cornerRadius="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_signin" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--        android:scaleType="centerCrop"-->
+</FrameLayout>
