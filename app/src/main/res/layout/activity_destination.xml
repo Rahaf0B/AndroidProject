@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/destinationContaner"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEDFFC"
+    tools:context=".DestinationActivity">
+
+    <TextView
+        android:id="@+id/textCotyNameDestination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:fontFamily="@font/carter_one"
+        android:text="TextView"
+        android:textColor="#050202"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ddd"
+        android:layout_width="372dp"
+        android:layout_height="183dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="39dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonImgOpen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#D88350A5"
+        android:fontFamily="@font/carter_one"
+        android:text="Show Image"
+        android:textColor="#EDC551"
+        app:cornerRadius="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCotyNameDestination" />
+
+    <Button
+        android:id="@+id/buttonDescriptionOpen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="112dp"
+        android:backgroundTint="#D88350A5"
+        android:fontFamily="@font/carter_one"
+        android:text="Show Description"
+        android:textColor="#EDC551"
+        app:cornerRadius="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCotyNameDestination" />
+
+    <Button
+        android:id="@+id/buttonLocationOpen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#D88350A5"
+        android:fontFamily="@font/carter_one"
+        android:text="Show Location"
+        android:textColor="#EDC551"
+        app:cornerRadius="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonImgOpen"
+        app:layout_constraintTop_toBottomOf="@+id/textCotyNameDestination" />
+
+
+    <LinearLayout
+        android:id="@+id/root_layout"
+        android:layout_width="410dp"
+        android:layout_height="440dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDescriptionOpen">
+
+        <FrameLayout
+            android:id="@+id/frameimage"
+            android:layout_width="wrap_content"
+            android:layout_height="214dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp">
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frameDescription"
+            android:layout_width="match_parent"
+            android:layout_height="214dp">
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/backbtnFragment"
+        android:layout_width="42dp"
+        android:layout_height="38dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/round_arrow_back_24"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

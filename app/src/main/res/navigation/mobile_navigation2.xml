@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation2"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.androidproject11805881181761.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+
+
+    <fragment
+        android:id="@+id/nav_all"
+        android:name="com.example.androidproject11805881181761.AllFragment"
+        android:label="All"
+        tools:layout="@layout/fragment_all" />
+
+
+
+
+
+    <fragment
+        android:id="@+id/nav_favorite"
+        android:name="com.example.androidproject11805881181761.FavoriteFragment"
+        android:label="Favorite"
+        tools:layout="@layout/fragment_favorite" />
+
+
+
+
+    <fragment
+        android:id="@+id/nav_sorted"
+        android:name="com.example.androidproject11805881181761.SortedFragment"
+        android:label="Sorted"
+        tools:layout="@layout/fragment_sorted" />
+
+
+
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.androidproject11805881181761.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+
+
+
+
+    <fragment
+        android:id="@+id/nav_logout"
+        android:name="com.example.androidproject11805881181761.LogoutFragment"
+        android:label="Logout"
+        tools:layout="@layout/fragment_logout" />
+
+<!--    <fragment-->
+<!--        android:id="@+id/nav_gallery"-->
+<!--        android:name="com.example.androidproject11805881181761.ui.gallery.GalleryFragment"-->
+<!--        android:label="@string/menu_gallery"-->
+<!--        tools:layout="@layout/fragment_gallery" />-->
+
+<!--    <fragment-->
+<!--        android:id="@+id/nav_slideshow"-->
+<!--        android:name="com.example.androidproject11805881181761.ui.slideshow.SlideshowFragment"-->
+<!--        android:label="@string/menu_slideshow"-->
+<!--        tools:layout="@layout/fragment_slideshow" />-->
+</navigation>
