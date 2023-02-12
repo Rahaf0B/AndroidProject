@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<RelativeLayout-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent">-->
+
+
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/rvAnimals"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent" />-->
+<!--</RelativeLayout>-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/allfragmentframe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEDFFC"
+    tools:context=".AllFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/idRVCourse"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="100dp" />
+
+    <Spinner
+        android:id="@+id/spinnerContentSelect"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="150dp"
+        android:layout_toEndOf="@+id/textViewSelectContent" />
+
+    <Button
+        android:id="@+id/SearchContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="#D88350A5"
+        android:fontFamily="@font/carter_one"
+        android:text="Serach"
+        android:textColor="#EDCE75"
+        app:cornerRadius="30dp" />
+
+    <TextView
+        android:id="@+id/textViewSelectContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginBottom="150dp"
+        android:fontFamily="@font/carter_one"
+        android:text="Continent"
+        android:textColor="#050505" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="200dp"
+        android:fontFamily="@font/carter_one"
+        android:text="You Can Select Another Continent"
+        android:textColor="#090404"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textcontintvaluename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="147dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="143dp"
+        android:fontFamily="@font/carter_one"
+        android:text="TextView"
+        android:textSize="18sp" />
+</RelativeLayout>
